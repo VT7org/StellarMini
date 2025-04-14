@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }} - {{ artist }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="app-mode">
+    <div class="player">
+        <h2>{{ title }}</h2>
+        <h4>{{ artist }}</h4>
+        <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1"
+            frameborder="0" allowfullscreen></iframe>
+        <button onclick="toggleStyle()">Switch Style</button>
+    </div>
+    <script>
+    function toggleStyle() {
+        document.body.classList.toggle("app-mode");
+        document.body.classList.toggle("web-mode");
+    }
+    </script>
+</body>
+</html>
