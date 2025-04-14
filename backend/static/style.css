@@ -1,15 +1,27 @@
-body.app-mode {
-    background: #121212;
-    color: white;
-    font-family: Arial;
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    margin: 0;
     padding: 20px;
-    text-align: center;
 }
-body.web-mode {
-    background: white;
-    color: black;
-}
-.player {
+.container {
     max-width: 600px;
     margin: auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
 }
+h2, h3 {
+    color: #fff;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    }
