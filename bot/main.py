@@ -3,9 +3,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils import executor
 from dotenv import load_dotenv
-from utils.queue import queue
-from utils.mongo import init_mongo, is_admin
-from sources.youtube import search_youtube
+from bot.utils.queue import queue
+from bot.utils.mongo import init_mongo, is_admin
+from bot.sources.youtube import search_youtube
 
 load_dotenv()
 bot = Bot(token=os.getenv("TELEGRAM_BOT_TOKEN"))
