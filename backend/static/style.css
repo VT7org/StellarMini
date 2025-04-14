@@ -1,0 +1,15 @@
+body.app-mode {
+    background: #121212;
+    color: white;
+    font-family: Arial;
+    padding: 20px;
+    text-align: center;
+}
+body.web-mode {
+    background: white;
+    color: black;
+}
+.player {
+    max-width: 600px;
+    margin: auto;
+}
