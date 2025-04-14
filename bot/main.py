@@ -6,9 +6,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils import executor
 from dotenv import load_dotenv
-from StellarMini.utils.queue import queue
-from StellarMini.utils.mongo import init_mongo, is_admin
-from StellarMini.sources.youtube import search_youtube
+from utils.queue import queue
+from utils.mongo import init_mongo, is_admin
+from sources.youtube import search_youtube
 
 load_dotenv()
 bot = Bot(token=os.getenv("TELEGRAM_BOT_TOKEN"))
