@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from jinja2 import Template
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="backend/static"), name="static")
 
 @app.get("/play", response_class=HTMLResponse)
 async def play(id: str, title: str, artist: str):
